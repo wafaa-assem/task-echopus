@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section>
       <div className="container">
-        <div className="grid grid-cols-12 gap-5">
+        <div className="grid grid-cols-12 gap-3">
           {/* first element */}
           <div className="col-span-12 lg:col-span-7 bg-white rounded-2xl lg:h-[600px] p-8 flex flex-col justify-between gap-6">
             <div className="flex items-center gap-5">
@@ -19,7 +19,7 @@ const Hero = () => {
                 Time for Fitness - 23
               </p>
             </div>
-            <h1 className="text-black text-4xl sm:text-6xl md:text-8xl xl:text-[100px] font-bold xl:font-extrabold max-w-sm sm:max-w-[750px]">
+            <h1 className="text-black uppercase text-4xl sm:text-6xl md:text-8xl xl:text-[100px] font-bold xl:font-extrabold max-w-sm sm:max-w-[750px]">
               Own Your Strength, Own You
             </h1>
             <div className="flex flex-col sm:flex-row items-start gap-7 sm:gap-20 mt-8 lg:mt-auto">
@@ -41,11 +41,12 @@ const Hero = () => {
           </div>
           {/* second element */}
           <div
-            className="col-span-12 lg:col-span-5 rounded-2xl lg:h-[600px] p-8 overflow-hidden bg-center bg-cover flex items-end bg-fixed lg:bg-scroll"
+            className="col-span-12 lg:col-span-5 rounded-2xl lg:h-[600px] p-8 overflow-hidden bg-center bg-cover flex flex-col justify-between bg-fixed lg:bg-scroll"
             style={{
               backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)) , url(${image})`,
             }}
           >
+            <div className="bg-black h-10 w-10 rounded-full aspect-square"></div>
             <h2 className="font-bold uppercase text-xl sm:text-3xl max-w-[300px]">
               train on your own time
             </h2>
@@ -54,7 +55,7 @@ const Hero = () => {
           <div className="col-span-12 lg:col-span-7 bg-[#E7B2AA] rounded-2xl lg:h-[220px] p-8 flex gap-5">
             <div className="items-center space-x-4 relative hidden md:flex">
               <div className="bg-primary w-[140px] h-[145px] rounded-xl absolute" />
-              <div className="bg-black w-[140px] h-[140px] rounded-xl" />
+              <div className="bg-black w-[140px] h-[128px] rounded-xl" />
             </div>
             <div className="w-full flex flex-col justify-between gap-6">
               <div className="flex justify-between">
@@ -65,12 +66,12 @@ const Hero = () => {
                   <p className="text-black text-sm md:text-base uppercase tracking-tight font-medium text-end max-w-[150px]">
                     12834 Fitness Ln broklyn, NY
                   </p>
-                  <div className="bg-black w-8 h-8 rounded-full flex items-center justify-center aspect-square">
+                  <div className="bg-black w-10 h-10 rounded-full flex items-center justify-center aspect-square">
                     <MdLocationPin className="text-primary text-xl" />
                   </div>
                 </div>
               </div>
-              <p className="text-2xl md:text-3xl font-bold text-black max-w-[300px] leading-[1.1]">
+              <p className="uppercase text-2xl md:text-3xl font-bold text-black max-w-[300px] leading-[1.1]">
                 Contact Us & Rise Stronger
               </p>
             </div>
@@ -119,7 +120,7 @@ const Hero = () => {
               </div>
               <div className="bg-black h-10 w-10 rounded-full aspect-square"></div>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-2">
+            <div className="flex flex-wrap justify-start items-center gap-2">
               <div className="text-black border border-black rounded-full font-medium tracking-tight uppercase flex justify-center items-center px-5 py-1 text-xs whitespace-nowrap">
                 boxing ring
               </div>
