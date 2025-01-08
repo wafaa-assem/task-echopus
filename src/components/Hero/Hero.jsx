@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
           {/* second element */}
           <div
-            className="col-span-12 lg:col-span-5 rounded-2xl lg:h-[600px] p-8 overflow-hidden bg-center bg-cover flex flex-col justify-between bg-fixed lg:bg-scroll"
+            className="col-span-12 lg:col-span-5 rounded-2xl lg:h-[600px] p-8 overflow-hidden bg-center bg-cover flex flex-col justify-between bg-fixed gap-12 lg:bg-scroll"
             style={{
               backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)) , url(${image})`,
             }}
